@@ -26,6 +26,21 @@ img {
   padding: 0 4%; /* スマートフォン向けの余白設定 */
 }
 
+.big-bg {
+  background-size: cover; /* 画像の縦横比を保つ */
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+#home {
+  background-image: url(../images/main-bg.jpg);
+  min-height: 100vh;
+}
+
+#home .page-title {
+  text-transform: none; /* 大文字、小文字を変換しない指定 */
+}
+
 /* HEADER */
 .logo {
   width: 210px;
