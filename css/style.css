@@ -20,6 +20,12 @@ img {
   max-width: 100%; /* 画像が親要素より大きくなることを防ぐ */
 }
 
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 4%; /* スマートフォン向けの余白設定 */
+}
+
 /* HEADER */
 .logo {
   width: 210px;
