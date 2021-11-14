@@ -250,7 +250,10 @@ aside p {
 .grid {
   display: grid;
   gap: 26px;
-  grid-template-columns: repeat(3, 1fr); /* 1fr 1fr 1frと同様の指定 */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(240px, 1fr)
+  ); /* 240pxより画像が小さくならない */
   margin-top: 6%;
   margin-bottom: 50px;
 }
