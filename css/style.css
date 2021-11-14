@@ -345,4 +345,13 @@ aside p {
   .menu-content {
     margin-top: 20px;
   }
+
+  .big-box {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .big-box img {
+    height: auto;
+  }
 }
