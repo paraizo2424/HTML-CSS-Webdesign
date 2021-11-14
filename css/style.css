@@ -32,18 +32,6 @@ img {
   background-repeat: no-repeat;
 }
 
-#home {
-  background-image: url(../images/main-bg.jpg);
-  min-height: 100vh;
-  /* background-color: #0bd; */
-  /* background-image: linear-gradient(#c9ffdf, #ffafbd); 背景のグラデーション */
-  /* background-blend-mode: hard-light; backgroundカラーと組み合わせる */
-}
-
-#home .page-title {
-  text-transform: none; /* 大文字、小文字を変換しない指定 */
-}
-
 /* HEADER */
 .logo {
   width: 210px;
@@ -76,6 +64,18 @@ img {
 }
 
 /* HOME */
+#home {
+  background-image: url(../images/main-bg.jpg);
+  min-height: 100vh;
+  /* background-color: #0bd; */
+  /* background-image: linear-gradient(#c9ffdf, #ffafbd); 背景のグラデーション */
+  /* background-blend-mode: hard-light; backgroundカラーと組み合わせる */
+}
+
+#home .page-title {
+  text-transform: none; /* 大文字、小文字を変換しない指定 */
+}
+
 .home-content {
   text-align: center;
   margin-top: 10%;
