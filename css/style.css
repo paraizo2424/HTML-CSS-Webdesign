@@ -136,8 +136,15 @@ footer p {
 }
 
 article {
-  background: aqua;
   width: 74%;
+}
+
+article img {
+  margin-bottom: 20px;
+}
+
+article p {
+  margin-bottom: 1rem;
 }
 
 aside {
