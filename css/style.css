@@ -128,3 +128,19 @@ footer p {
 #news .page-title {
   text-align: center;
 }
+
+.news-contents {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+article {
+  background: aqua;
+  width: 74%;
+}
+
+aside {
+  background: tomato;
+  width: 22%;
+}
