@@ -43,6 +43,11 @@ footer p {
   font-size: 0.875rem;
 }
 
+/* iframe */
+iframe {
+  width: 100%;
+}
+
 /* HEADER */
 .logo {
   width: 210px;
@@ -327,6 +332,30 @@ input[type="submit"] {
 
 .location-map {
   width: 74%;
+}
+
+/* SNS */
+#sns {
+  background: #faf7f0;
+  padding: 4% 0;
+}
+
+#sns .wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#sns .sub-title {
+  margin-bottom: 30px;
+}
+
+.sns-box {
+  width: 30%;
+}
+
+.none-box {
+  border: 2px tomato dotted;
+  height: 315px;
 }
 
 /* モバイル版 (ブレークポイントは600px以下の画面幅) */
