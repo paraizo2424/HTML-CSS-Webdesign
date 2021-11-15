@@ -275,6 +275,39 @@ aside p {
   min-height: 100vh;
 }
 
+/* フォーム */
+form div {
+  margin-top: 14px;
+}
+
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px, #fff, solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+textarea {
+  width: 100%;
+  max-width: 480px;
+  height: 6rem;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
 /* モバイル版 (ブレークポイントは600px以下の画面幅) */
 @media (max-width: 600px) {
   .page-title {
