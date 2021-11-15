@@ -269,6 +269,12 @@ aside p {
   object-fit: cover; /* 表示範囲のトリミング */
 }
 
+/* CONTACT */
+#contact {
+  background-image: url(../images/contact-bg.jpg);
+  min-height: 100vh;
+}
+
 /* モバイル版 (ブレークポイントは600px以下の画面幅) */
 @media (max-width: 600px) {
   .page-title {
