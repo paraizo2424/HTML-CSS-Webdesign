@@ -4,3 +4,17 @@
 html {
   font-size: 100%; /* ユーザが設定した文字サイズを正しく反映 */
 }
+
+section {
+  height: 100vh;
+  background: beige;
+  background-size: cover; /* 画面の縦横比を保持 */
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  background-image: url(../images/bread1.jpg);
+  padding-top: 10vh;
+  text-align: center;
+}
