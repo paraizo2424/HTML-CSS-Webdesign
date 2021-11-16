@@ -8,13 +8,14 @@ html {
 section {
   height: 100vh;
   background: beige;
-  background-size: cover; /* 画面の縦横比を保持 */
+  /* background-size: cover; 画面の縦横比を保持 */
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .hero {
-  background-image: url(../images/bread1.jpg);
+  background-image: url(../images/bg1.png), url(../images/bg2.png);
+  background-position: left top, right top;
   padding-top: 10vh;
   text-align: center;
 }
