@@ -57,3 +57,10 @@ ul {
 .sns-links a:hover {
   background: rgba(255, 255, 255, 0.5);
 }
+
+/* モバイル設定 */
+@media (max-width: 700px) {
+  .title {
+    font-size: 4rem;
+  }
+}
