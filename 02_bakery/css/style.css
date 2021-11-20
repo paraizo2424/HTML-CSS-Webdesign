@@ -13,8 +13,16 @@ body {
 }
 
 /* 共通部分 */
+.container {
+  overflow: auto;
+  scroll-snap-type: y mandatory; /* スクロールの調整 */
+  height: 100vh;
+}
 section {
   height: 100vh;
+  scroll-snap-align: start; /* スクロールで止める位置 */
+
+  /* 背景画像を画面いっぱいに表示させる指定 */
   background: beige;
   background-size: cover; /* 画面の縦横比を保持 */
   background-position: center center;
