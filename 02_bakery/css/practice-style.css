@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+html {
+  font-size: 100%;
+}
+body {
+  color: #555;
+  font-family: sans-serif;
+  text-align: center;
+}
+p {
+  line-height: 1.7;
+}
+.title {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+}
+.container {
+  /* スクロールスナップの設定 */
+}
+.area {
+  padding: 1rem;
+
+  /* テキストを画面中央に表示 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  /* スクロールスナップの設定 */
+
+  height: 100vh;
+}
+.btn {
+  background: #555;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem 3.5rem;
+  border-radius: 6px;
+  margin: 2rem 0 2.25rem;
+  display: inline-block; /* a要素に上下の余白をつけるため */
+}
+.btn:hover {
+  background: #777;
+}
+
+/* 各エリアの背景色 */
+.area:nth-child(even) {
+  background-color: #ffd1da;
+}
+.area:nth-child(odd) {
+  background-color: #fff3d1;
+}
+
+/*
+モバイルサイズ
+================================================ */
