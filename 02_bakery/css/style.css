@@ -81,7 +81,6 @@ p {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
-  list-style: none;
 }
 .sns-links a {
   background: #fff;
