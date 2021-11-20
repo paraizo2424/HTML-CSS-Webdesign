@@ -1,6 +1,6 @@
 @charset "UTF-8"; /* コードの文字化けを防ぐ */
 
-/* 共通部分 */
+/* 全般部分 */
 html {
   font-size: 100%; /* ユーザが設定した文字サイズを正しく反映 */
 }
@@ -8,10 +8,11 @@ html {
 body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
     "ヒラギノ角ゴ Pro W3", sans-serif;
-  line-height: 1.7;
+  color: #555;
   box-sizing: border-box;
 }
 
+/* 共通部分 */
 section {
   height: 100vh;
   background: beige;
@@ -19,29 +20,69 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
 }
-
-.hero {
-  background-image: url(../images/bread1.jpg);
-  padding-top: 10vh;
-  text-align: center;
+p {
+  line-height: 1.7;
+  font-size: 1.125rem;
 }
-
 .title {
   font-family: "Dancing Script", cursive;
   font-size: 7rem;
   margin-bottom: 2rem;
 }
 
-ul {
-  list-style: none;
+/* HERO */
+.hero {
+  background-image: url(../images/bread1.jpg);
+  padding-top: 10vh;
+  text-align: center;
 }
 
+/* MENU */
+.menu {
+  background-image: url(../images/bread2.jpg);
+  display: flex;
+  align-items: center;
+}
+.wrapper {
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.menu-list tr {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.7;
+}
+.menu-list th {
+  font-weight: normal;
+}
+.menu-list td {
+  padding-left: 1rem;
+}
+
+/* CONTACT */
+.contact {
+  background-image: url(../images/cafe.jpg);
+  text-align: center;
+  padding-top: 8vh;
+}
+.btn {
+  background: #555;
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 1rem 3.5rem;
+  border-radius: 6px;
+  margin: 2rem 0 2.25rem;
+  display: inline-block; /* a要素に上下の余白をつけるため */
+}
+.btn:hover {
+  background: #777;
+}
 .sns-links {
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  list-style: none;
 }
-
 .sns-links a {
   background: #fff;
   width: 3.75rem;
