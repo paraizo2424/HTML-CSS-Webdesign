@@ -12,11 +12,15 @@ p {
   line-height: 1.7;
 }
 .title {
+  font-family: "Lobster", cursive;
   font-size: 5rem;
   margin-bottom: 2rem;
 }
 .container {
   /* スクロールスナップの設定 */
+  overflow: auto;
+  scroll-snap-type: y mandatory; /* スクロールの調整 */
+  height: 100vh;
 }
 .area {
   padding: 1rem;
@@ -27,7 +31,7 @@ p {
   justify-content: center;
 
   /* スクロールスナップの設定 */
-
+  scroll-snap-align: start; /* スクロールで止める位置 */
   height: 100vh;
 }
 .btn {
@@ -54,3 +58,8 @@ p {
 /*
 モバイルサイズ
 ================================================ */
+@media (max-width: 400px) {
+  .title {
+    font-size: 3rem;
+  }
+}
