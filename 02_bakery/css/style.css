@@ -104,4 +104,11 @@ p {
   .title {
     font-size: 4rem;
   }
+  p {
+    padding: 0 1rem;
+  }
+  p,
+  .menu-list {
+    padding-top: 12vh;
+  }
 }
