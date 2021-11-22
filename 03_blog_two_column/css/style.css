@@ -1,8 +1,8 @@
-@charset "UTF-8"; /* コードの文字化けを防ぐ */
+@charset "UTF-8";
 
 /* 全般部分 */
 html {
-  font-size: 100%; /* ユーザが設定した文字サイズを正しく反映 */
+  font-size: 100%;
 }
 body {
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
