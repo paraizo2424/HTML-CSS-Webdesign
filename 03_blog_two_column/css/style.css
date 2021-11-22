@@ -17,8 +17,24 @@ p {
 
 /* デスクトップサイズ設定（モバイルファースト） */
 @media (min-width: 600px) {
-  p {
-    padding: 0 1rem;
-    padding-top: 12vh;
+  /* Layout */
+  .container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+    padding: 1rem 2.5rem 2.5rem;
+  }
+
+  /* Main */
+  main {
+    width: 68%;
+    margin-bottom: 0;
+    background: tomato;
+  }
+
+  /* Aside */
+  aside {
+    width: 26%;
+    background: navajowhite;
   }
 }
