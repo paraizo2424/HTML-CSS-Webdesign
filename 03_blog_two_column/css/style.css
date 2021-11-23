@@ -38,3 +38,19 @@ p {
     background: navajowhite;
   }
 }
+
+/* モバイル端末の画面を横にしたときを想定 */
+@media (max-height: 420px) {
+  header {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .page-desc {
+    font-size: 0.7rem;
+  }
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+}
