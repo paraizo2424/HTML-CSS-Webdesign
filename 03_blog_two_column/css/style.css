@@ -43,6 +43,9 @@ p {
   color: #949087;
   text-decoration: none;
 }
+.post-title a:hover {
+  color: #605c55;
+}
 
 /* デスクトップサイズ設定（モバイルファースト） */
 @media (min-width: 600px) {
