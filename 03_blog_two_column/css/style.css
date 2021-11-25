@@ -16,6 +16,9 @@ p {
 }
 
 /* 記事部分 */
+.post-home {
+  margin-bottom: 3rem;
+}
 .post-title {
   padding-bottom: 10px;
   background-image: linear-gradient(
@@ -46,6 +49,16 @@ p {
 .post-title a:hover {
   color: #605c55;
 }
+.post-thumb {
+  margin: 0 0 1rem 0;
+  position: relative; /* なぜ指定するのかわからない */
+}
+.post-img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover; /* アスペクト比を変えずにトリミング */
+  border-radius: 40% 70% 50% 30%/50%;
+}
 
 /* デスクトップサイズ設定（モバイルファースト） */
 @media (min-width: 600px) {
@@ -61,6 +74,17 @@ p {
   main {
     width: 68%;
     margin-bottom: 0;
+  }
+
+  /* 記事部分 */
+  .post-img {
+    width: 220px;
+    height: 180px;
+  }
+  .post-thumb {
+    margin: 0 3rem 1rem 0;
+    shape-outside: circle();
+    float: left;
   }
 
   /* Aside */
