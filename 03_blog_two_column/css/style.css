@@ -81,6 +81,25 @@ p {
   object-fit: cover; /* アスペクト比を変えずにトリミング */
   border-radius: 40% 70% 50% 30%/50%;
 }
+.btn {
+  text-align: right;
+  margin-top: 1rem;
+}
+.btn a {
+  color: #fff;
+  font-size: 1.5rem;
+  background: #eda1a1;
+  padding: 10px 20px;
+  border: 2px #e38787 dashed;
+  border-radius: 5px;
+  box-shadow: 0 0 0 5px #eda1a1;
+  display: inline-block;
+}
+.btn a:hover {
+  background: #e38787;
+  box-shadow: 0 0 0 5px #e38787;
+  border: 2px dashed#eda1a1;
+}
 
 /* デスクトップサイズ設定（モバイルファースト） */
 @media (min-width: 600px) {
