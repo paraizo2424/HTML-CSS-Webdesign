@@ -101,6 +101,40 @@ p {
   border: 2px dashed#eda1a1;
 }
 
+/* サイドバー部分 */
+.category li::before {
+  /* fontawesome */
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  content: "\f6be";
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  margin: 0 10px 2px 0;
+}
+.popular-posts li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #93d8d0;
+  display: inline-block;
+  margin: 0 8px 2px 0;
+}
+/* 外部リンク */
+.pseudo-element a[href^="http://"]::before
+{
+  content: url(../images/link.svg);
+}
+/* メール */
+.pseudo-element a[href^="mailto:"]::before {
+  content: url(../images/email.svg);
+}
+/* PDF */
+.pseudo-element a[href$=".pdf"]::before {
+  content: url(../images/doc.svg);
+}
+
 /* デスクトップサイズ設定（モバイルファースト） */
 @media (min-width: 600px) {
   /* Layout */
