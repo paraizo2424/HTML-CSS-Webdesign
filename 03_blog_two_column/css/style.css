@@ -81,6 +81,9 @@ p {
   object-fit: cover; /* アスペクト比を変えずにトリミング */
   border-radius: 40% 70% 50% 30%/50%;
 }
+.post-desc {
+  text-align: justify;
+}
 .btn {
   text-align: right;
   margin-top: 1rem;
