@@ -121,6 +121,9 @@ p {
   display: inline-block;
   margin: 0 8px 2px 0;
 }
+.pseudo-element a {
+  text-decoration: underline tomato;
+}
 /* 外部リンク */
 .pseudo-element a[href^="http://"]::before
 {
