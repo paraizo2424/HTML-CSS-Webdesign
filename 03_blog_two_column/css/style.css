@@ -104,6 +104,31 @@ p {
   border: 2px dashed#eda1a1;
 }
 
+/* 引用文 */
+blockquote {
+  position: relative;
+  padding: 1rem 3rem 1rem 3rem;
+  margin-bottom: 1rem;
+}
+blockquote::before,
+blockquote::after {
+  font-size: 6rem;
+  font-family: georgia, serif;
+  color: #ccc;
+  position: absolute;
+  line-height: 0;
+}
+blockquote::before {
+  content: "\201C";
+  top: 0.5rem;
+  left: 0;
+}
+blockquote::after {
+  content: "\201D";
+  bottom: 0.5rem;
+  right: 0;
+}
+
 /* サイドバー部分 */
 .category li::before {
   /* fontawesome */
