@@ -145,6 +145,33 @@ blockquote::after {
   border-right: 2px solid #ccc;
   border-bottom: 2px solid #ccc;
 }
+
+/* ページネーション */
+.pagination {
+  display: flex;
+  justify-content: center;
+  font-family: "M PLUS Rounded 1c";
+  font-size: 1.5rem;
+  text-align: center;
+}
+.pagination a:hover {
+  background: #93d8d0;
+  color: #fff;
+}
+.pagination a,
+.pagination .current {
+  border-radius: 50%;
+  padding-top: 4px;
+  display: inline-block; /* 高さと幅を指定できる */
+  width: 36px;
+  height: 36px;
+  margin: 0 6px;
+}
+.pagination .current {
+  background: #ccc;
+  color: #fff;
+}
+
 /* サイドバー部分 */
 .category li::before {
   /* fontawesome */
