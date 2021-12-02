@@ -128,7 +128,23 @@ blockquote::after {
   bottom: 0.5rem;
   right: 0;
 }
-
+.kagikakko {
+  padding: 2rem;
+}
+.kagikakko::before,
+.kagikakko::after {
+  content: "";
+  width: 40px;
+  height: 40px;
+}
+.kagikakko::before {
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+}
+.kagikakko::after {
+  border-right: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
+}
 /* サイドバー部分 */
 .category li::before {
   /* fontawesome */
