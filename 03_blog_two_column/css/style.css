@@ -194,11 +194,24 @@ blockquote::after {
   padding: 1rem 2rem 1rem 1rem;
   text-align: right;
 }
+.prev::before,
+.next::after {
+  font-weight: 900;
+  font-family: "Font Awesome 5 Free"; /* 書籍はProだがFreeを使用 */
+}
+.prev::before {
+  content: "\f060";
+  margin-right: 0.5rem;
+}
+.next::after {
+  content: "\f061";
+  margin-left: 0.5rem;
+}
 
 /* サイドバー部分 */
 .category li::before {
   /* fontawesome */
-  font-family: "Font Awesome 5 Pro";
+  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f6be";
   width: 8px;
