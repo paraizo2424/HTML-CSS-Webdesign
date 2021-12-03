@@ -209,6 +209,44 @@ blockquote::after {
 }
 
 /* サイドバー部分 */
+.side-box {
+  margin-bottom: 4rem;
+  border: 2px solid #ccc;
+  outline: 2px solid #ccc;
+  padding: 0.875rem;
+  outline-offset: 4px;
+  border-radius: 6px;
+  position: relative;
+}
+.side-box::before {
+  display: block; /* なぜ設定しているか不明 */
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  top: -1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #949087;
+  font-size: 1.5rem;
+  content: "\f1b0";
+}
+.side-box h3 {
+  font-family: "Amatic SC", cursive;
+  font-size: 1.875rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin: 0.875rem 0 1.125rem;
+}
+.side-box li {
+  border-bottom: 1px dashed #ccc;
+  padding: 1rem 0.25rem;
+  /* display: flex; */
+}
 .category li::before {
   /* fontawesome */
   font-family: "Font Awesome 5 Free";
@@ -275,7 +313,6 @@ blockquote::after {
   /* Aside */
   aside {
     width: 26%;
-    background: navajowhite;
   }
 }
 
