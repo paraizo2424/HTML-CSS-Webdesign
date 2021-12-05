@@ -334,6 +334,19 @@ footer small {
   font-size: 0.875rem;
 }
 
+/* フッターを最下部に固定表示author.html */
+html,
+body {
+  height: 100%;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.full-height {
+  flex: 1;
+}
+
 /* デスクトップサイズ設定（モバイルファースト） */
 @media (min-width: 600px) {
   /* Layout */
