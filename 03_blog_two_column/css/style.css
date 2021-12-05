@@ -311,6 +311,28 @@ blockquote::after {
 .pseudo-element a[href$=".pdf"]::before {
   content: url(../images/doc.svg);
 }
+/* フッター部分 */
+footer {
+  text-align: center;
+  background: #605c55;
+  color: #fff;
+  padding: 2rem 0 1rem;
+}
+.footer-nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+footer li {
+  margin: 0 12px;
+}
+footer a:hover {
+  color: #c7c3ba;
+}
+footer small {
+  color: #c7c3ba;
+  font-size: 0.875rem;
+}
 
 /* デスクトップサイズ設定（モバイルファースト） */
 @media (min-width: 600px) {
