@@ -378,19 +378,12 @@ body {
   aside {
     width: 26%;
   }
+  .popular-posts {
+    position: sticky;
+    top: 1rem;
+  }
 }
-/* フッターを最下部に固定表示 */
-html,
-body {
-  height: 100%;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.full-height {
-  flex: 1;
-}
+
 
 /* モバイル端末の画面を横にしたときを想定 */
 @media (max-height: 420px) {
