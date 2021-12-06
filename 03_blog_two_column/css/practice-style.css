@@ -71,5 +71,12 @@ li {
   }
   aside {
     width: 26%;
+    /* position: relative; */
+  }
+  .side-box {
+  }
+  .sticky {
+    position: sticky;
+    top: 1rem; /* 必要 */
   }
 }
