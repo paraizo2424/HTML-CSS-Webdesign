@@ -11,11 +11,17 @@
     />
     <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
 
-    <!-- CSS -->
+    <!-- RESET CSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
     />
+    <!-- Chartist.js用 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css"
+    />
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Fonts -->
     <link
@@ -61,6 +67,10 @@
           ただ機能する制作物を作ろのではなく、使い勝手がよく美しいものを生み出していきます。
           あなたも、誰かの世界が変わるようなクリエイティブなWebサイトを世界中に広めませんか？
         </p>
+
+        <div class="home-chart">
+          <div class="pie-chart"></div>
+        </div>
       </div>
     </section>
 
@@ -88,5 +98,10 @@
         </nav>
       </div>
     </footer>
+
+    <!-- Chartist -->
+    <script src="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>
