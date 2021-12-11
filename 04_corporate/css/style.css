@@ -68,6 +68,13 @@ HOME
 .ct-series-d .ct-slice-pie {
   fill: #bbb;
 }
+/* 棒グラフ */
+.ct-series-a .ct-bar {
+  stroke: #3a7edf;
+}
+.ct-bar {
+  stroke-width: 16%;
+}
 /*
 DESKTOP SIZE
 ================================================ */
