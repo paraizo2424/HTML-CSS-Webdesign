@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+/* 全般 */
+h2 {
+  font-size: 1.5rem;
+  padding-top: 1.5rem;
+}
+section a {
+  display: block;
+  text-decoration: underline;
+}
+ol {
+  list-style: decimal inside;
+}
+/* 属性セレクタ */
+input[required] {
+  background: pink;
+}
+input[type="email"] {
+  background: pink;
+}
+li[class~="pink"] {
+  background: pink;
+}
+li[class|="list"] {
+  background: pink;
+}
+.caret a[href^="http"] {
+  background: pink;
+}
+.dollermark a[href$="pdf"] {
+  background: pink;
+}
+.asterisk a[href*="twitter"] {
+  background: pink;
+}
+.item-n:nth-child(3n + 1) {
+  background: pink;
+}
