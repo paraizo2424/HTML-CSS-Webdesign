@@ -177,6 +177,25 @@ input[type="checkbox"] {
   appearance: none; /* デフォルトのスタイル削除 */
   position: absolute; /* 文字にチェックボックスを重ねる */
 }
+input[type="checkbox"] + span::before {
+  display: inline-block;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #bbb;
+  background: #fff;
+  margin: -0.125rem 0.5rem 0 0;
+  vertical-align: middle;
+  /* Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding: 0 2px;
+  line-height: 1.5;
+}
+/* チェックが入るとチェックアイコンを表示 */
+input[type="checkbox"]:checked + span::before {
+  content: "\f00c";
+}
 /*
 DESKTOP SIZE
 ================================================ */
