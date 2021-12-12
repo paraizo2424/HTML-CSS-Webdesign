@@ -57,19 +57,19 @@
 
     <section>
       <div class="wrapper">
-        <h2>要素名[属性名]</h2>
+        <h2 class="title">要素名[属性名]</h2>
         <p>入力欄</p>
         <input type="text" />
         <p>入力欄（必須）</p>
         <input type="text" required />
 
-        <h2>要素名[属性名="属性値"]</h2>
+        <h2 class="title">要素名[属性名="属性値"]</h2>
         <p>メール入力欄</p>
         <input type="email" />
 
         <input type="submit" value="送信" />
 
-        <h2>要素名[属性名~="属性値"]</h2>
+        <h2 class="title">要素名[属性名~="属性値"]</h2>
         <p>属性値が複数存在する場合は「~（チルダ）」が必要</p>
         <ul>
           <li class="pink list">リストアイテム pink,list</li>
@@ -77,7 +77,7 @@
           <li class="list">リストアイテム list</li>
         </ul>
 
-        <h2>要素名[属性名|="属性値"]</h2>
+        <h2 class="title">要素名[属性名|="属性値"]</h2>
         <p>指定の属性値、またはハイフンで区切った前に指定の属性値を持つ要素</p>
         <ul>
           <li class="list">リストアイテム list</li>
@@ -86,7 +86,7 @@
           <li class="item">リストアイテム item</li>
         </ul>
 
-        <h2>要素名[属性名^="属性値"]</h2>
+        <h2 class="title">要素名[属性名^="属性値"]</h2>
         <p>指定の属性値から始まる要素</p>
         <div class="caret">
           <a href="index.html">同一Webサイト内リンク</a>
@@ -94,7 +94,7 @@
           <a href="https://example.com">外部リンク（https）</a>
         </div>
 
-        <h2>要素名[属性名$="属性値"]</h2>
+        <h2 class="title">要素名[属性名$="属性値"]</h2>
         <p>指定の属性値で終わる要素</p>
         <div class="dollermark">
           <a href="index.html">同一Webサイト内リンク</a>
@@ -102,7 +102,7 @@
           <a href="example-file.pdf">PDFファイル</a>
         </div>
 
-        <h2>要素名[属性名*="属性値"]</h2>
+        <h2 class="title">要素名[属性名*="属性値"]</h2>
         <p>指定の属性値を1つ以上含む要素</p>
         <div class="asterisk">
           <a href="https://www.webcreatorbox.com">Webサイト</a>
@@ -114,7 +114,7 @@
           >
         </div>
 
-        <h2>li:nth-child()</h2>
+        <h2 class="title">li:nth-child()</h2>
         <p>式による指定方法</p>
         <ol>
           <li class="item-n">リストアイテム</li>
@@ -132,9 +132,9 @@
 
     <footer>
       <div class="wrapper">
-        <a href="job.html">募集要項を見る</a>
+        <a href="job.html" class="btn">募集要項を見る</a>
         <nav>
-          <ul>
+          <ul class="footer-nav">
             <li><a href="#">会社概要</a></li>
             <li><a href="#">サービス内容</a></li>
             <li><a href="#">スタッフブログ</a></li>

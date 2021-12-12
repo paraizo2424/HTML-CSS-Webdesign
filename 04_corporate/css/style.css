@@ -40,6 +40,21 @@ section:nth-child(odd) {
 .btn:hover {
   opacity: 0.8;
 }
+/* Heading */
+.title {
+  font-family: "Sawarabi Mincho";
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.title::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 10rem;
+  background: #d0bea2;
+  margin: 2rem 0 2.5rem;
+}
+
 /*
 HEADER
 ================================================ */
@@ -340,5 +355,16 @@ DESKTOP SIZE
   }
   .home-hero p {
     width: 38vw;
+  }
+  /* FOOTER */
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+  }
+  .footer-nav li {
+    margin: 0 0.75rem;
+  }
+  .footer-nav a:hover {
+    color: #fff;
   }
 }
