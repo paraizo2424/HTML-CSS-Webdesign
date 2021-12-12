@@ -171,6 +171,12 @@ input[type="url"]::placeholder,
 textarea::placeholder {
   color: #bbb;
 }
+input[type="checkbox"] {
+  opacity: 0; /* 透明にする */
+  -webkit-appearance: none; /* Safariでのスタイル削除 */
+  appearance: none; /* デフォルトのスタイル削除 */
+  position: absolute; /* 文字にチェックボックスを重ねる */
+}
 /*
 DESKTOP SIZE
 ================================================ */
