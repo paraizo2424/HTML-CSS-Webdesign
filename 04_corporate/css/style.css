@@ -34,6 +34,51 @@ section:nth-child(odd) {
   opacity: 0.8;
 }
 /*
+HEADER
+================================================ */
+header .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.main-nav {
+  display: flex;
+}
+.main-nav li {
+  text-align: center;
+  font-size: 0.75rem;
+}
+.logo {
+  width: 7.5rem;
+}
+.main-nav a {
+  display: block;
+  padding: 0.5rem;
+  width: 4rem;
+}
+.main-nav a::before {
+  display: block;
+  margin-bottom: 0.25rem;
+  /* Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #555;
+  font-size: 1.25rem;
+}
+.menu-home::before {
+  content: "\f015";
+}
+.menu-job::before {
+  content: "\f0ca";
+}
+.menu-form::before {
+  content: "\f56e";
+}
+.main-nav .current {
+  background: #f8f6f2;
+}
+/*
 HOME
 ================================================ */
 .home-hero {
