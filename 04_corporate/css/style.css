@@ -164,13 +164,27 @@ HOME
 .ct-bar {
   stroke-width: 16%;
 }
-/* Form */
+/*
+FORM.html
+================================================ */
+/* 入力欄 */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+select,
+textarea {
+  border: 1px solid #bbb;
+  background: #fff;
+  padding: 0.5rem;
+  width: 100%;
+}
 input[type="text"]::placeholder,
 input[type="email"]::placeholder,
 input[type="url"]::placeholder,
 textarea::placeholder {
   color: #bbb;
 }
+/* チェックボックス */
 input[type="checkbox"] {
   opacity: 0; /* 透明にする */
   -webkit-appearance: none; /* Safariでのスタイル削除 */
@@ -195,6 +209,21 @@ input[type="checkbox"] + span::before {
 /* チェックが入るとチェックアイコンを表示 */
 input[type="checkbox"]:checked + span::before {
   content: "\f00c";
+}
+/* セレクトボックス */
+.select-box {
+  position: relative;
+}
+.select-box::after {
+  display: inline-block;
+  position: absolute;
+  top: 1.625rem;
+  right: 1rem;
+  /* Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f078";
+  color: #bbb;
 }
 /*
 DESKTOP SIZE
