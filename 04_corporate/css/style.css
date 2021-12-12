@@ -152,6 +152,12 @@ HOME
 DESKTOP SIZE
 ================================================ */
 @media (min-width: 600px) {
+  /* Table */
+  th,
+  td {
+    padding: 1.125rem;
+    display: table-cell;
+  }
   /* Contents */
   .content {
     display: flex;
