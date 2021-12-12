@@ -78,6 +78,9 @@ header .wrapper {
 .main-nav .current {
   background: #f8f6f2;
 }
+.menu-selector::before {
+  content: "\f0db";
+}
 /* Table */
 table {
   margin: 3.5rem 0;
