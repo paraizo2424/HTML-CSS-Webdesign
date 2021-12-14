@@ -56,6 +56,7 @@ main {
   font-family: "Sawarabi Mincho";
   font-size: 1.5rem;
   line-height: 1.5;
+  margin: 2rem 0;
 }
 .title::after {
   content: "";
@@ -63,7 +64,7 @@ main {
   height: 5px;
   width: 10rem;
   background: #d0bea2;
-  margin: 2rem 0 2.5rem;
+  margin: 2rem auto 2.5rem;
 }
 
 /*
