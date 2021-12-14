@@ -28,6 +28,17 @@ section:nth-child(odd) {
   margin: 0 auto;
   padding: 0 1rem;
 }
+main {
+  max-width: 900px;
+  width: 94%;
+  margin: 6.25rem auto;
+  padding: 3rem 2rem;
+  background: #fff;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+.title-center {
+  text-align: center;
+}
 /* ボタン */
 .btn {
   display: block;
@@ -342,7 +353,9 @@ DESKTOP SIZE
     width: 34vw;
   }
   .btn {
-    display: inline-block;
+    display: block;
+    width: 40%;
+    margin: 0 auto;
   }
   .home-hero {
     padding: 16vw 1rem;
