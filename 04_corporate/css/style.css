@@ -115,6 +115,9 @@ header .wrapper {
 .menu-selector::before {
   content: "\f0db";
 }
+.practice-selector::before {
+  content: "\f303";
+}
 /* Table */
 table {
   margin: 3.5rem 0;
