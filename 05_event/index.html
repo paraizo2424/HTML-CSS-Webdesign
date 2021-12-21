@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample web</title>
+    <meta
+      name="description"
+      content="Web制作会社 Sample Webのリクルートサイト"
+    />
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml" />
+
+    <!-- RESET CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/destyle.css@1.0.5/destyle.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FontAwesome -->
+    <script
+      src="https://kit.fontawesome.com/24f3df1f19.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>WCB Conference</h1>
+
+      <nav>
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#news">news</a></li>
+          <li><a href="#speakers">speakers</a></li>
+          <li><a href="#ticket">ticket</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>WCB Conference</h1>
+        <h2>2022.01.01 14:00 - 16:00</h2>
+        <p>
+          オンラインで行っているWebサイト制作の勉強会、WCB Conference。
+          今回は最新のCSSテクニックとデザイントレンドを中心に紹介します。
+          参加料金は無料！お気軽にお参加ください。
+        </p>
+      </section>
+
+      <section class="about">
+        <h1 id="about">about</h1>
+
+        <p>
+          WCB Conferenceとは、Weサイト制作を学びたい人たちが集まる勉強会です。
+          オンラインで開催しているので、世界中どこにいても参加できます。
+          最新のWebサイト制作やデザイントレンドを紹介し、それらの知識について参加者が話し合うと時間も設けています。
+          一人で勉強を続けるだけでなく、仲間と交流しながら新しい可能性を一緒に探していきましょう。
+        </p>
+
+        <img src="images/computer.jpg" alt="" />
+      </section>
+
+      <section class="news">
+        <h1 id="news">news</h1>
+
+        <table>
+          <tr>
+            <th>2021年10月16日</th>
+            <td>参加登録を開始しました</td>
+          </tr>
+          <tr>
+            <th>2021年10月10日</th>
+            <td>WCB Conferenceの登壇者が決定しました</td>
+          </tr>
+          <tr>
+            <th>2021年10月02日</th>
+            <td>WCB ConferenceのWebサイトをリニューアルしました</td>
+          </tr>
+          <tr>
+            <th>2021年09月26日</th>
+            <td>WCB Conference開催決定！</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="speakers">
+        <h1 id="speakers">speakers</h1>
+
+        <div class="speaker">
+          <img src="images/mana.jpg" alt="" />
+          <h3>Mana</h3>
+          <p>
+            日本で2年間グラフィックデザイナーとして働いた後、カナダ・バンクーバーにあるWeb制作の学校を卒業。
+            カナダやオーストラリア、イギリスの企業でWebデザイナーとして働きました。
+            現在はWebサイト制作のインストラクターとして教育関連を頑張っています。
+          </p>
+        </div>
+
+        <div class="speaker">
+          <img src="images/tatsuya.jpg" alt="" />
+          <h3>Tatsuya</h3>
+          <p>
+            株式会社Sample Web代表。
+            学生時代より独学でWebサイト制作を学び、デザイナーの働きやすい環境を求めて独立。
+            音楽・アート関連のWebサイト制作やアプリ制作をはじめ、イベントの主催や登壇なども行っています。
+          </p>
+        </div>
+      </section>
+
+      <section class="ticket">
+        <h2 id="ticket">ticket</h2>
+
+        <div class="ticket-form">
+          <label for="name">name</label>
+          <input type="text" name="name" id="name" />
+
+          <label for="email">email</label>
+          <input type="email" name="email" id="email" />
+
+          <input type="submit" value="Join Now!" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#">お問い合わせ</a>
+      <small>&copy; 2021 WEB Conference</small>
+    </footer>
+
+    <!-- javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

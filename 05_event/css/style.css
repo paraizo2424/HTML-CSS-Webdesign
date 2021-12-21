@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+/*
+全般
+================================================ */
+html {
+  font-size: 100%;
+}
+body {
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3", sans-serif;
+  color: #555;
+}
+/*
+共通部分
+================================================ */
+p,
+td {
+  line-height: 1.7;
+}
+/* レイアウト */
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+main {
+  max-width: 900px;
+  width: 94%;
+  margin: 6.25rem auto;
+  padding: 3rem 2rem;
+}
+/* ボタン */
+.btn {
+  display: block;
+  text-align: center;
+  background: royalblue;
+  color: #fff;
+  padding: 1rem 2rem;
+  font-size: 2.25rem;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+/* Heading */
+.title {
+  font-family: "Sawarabi Mincho";
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin: 2rem 0;
+}
+.title::after {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 10rem;
+  background: #d0bea2;
+  margin: 2rem auto 2.5rem;
+}
+
+/*
+HEADER
+================================================ */
+
+/* Table */
+table {
+  margin: 3.5rem 0;
+  width: 100%;
+}
+th,
+td {
+  display: block;
+}
+th {
+  font-weight: normal;
+  background: #f8f6f2;
+  vertical-align: middle;
+  padding: 1rem;
+}
+td {
+  padding: 0.75rem 1rem 1.75rem;
+}
+
+/*
+form
+================================================ */
+/* 入力欄 */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+select,
+textarea {
+  border: 1px solid #bbb;
+  background: #fff;
+  padding: 0.5rem;
+  width: 100%;
+}
+input[type="text"]::placeholder,
+input[type="email"]::placeholder,
+input[type="url"]::placeholder,
+textarea::placeholder {
+  color: #bbb;
+}
+/* チェックボックス */
+input[type="checkbox"] {
+  opacity: 0; /* 透明にする */
+  -webkit-appearance: none; /* Safariでのスタイル削除 */
+  appearance: none; /* デフォルトのスタイル削除 */
+  position: absolute; /* 文字にチェックボックスを重ねる */
+}
+input[type="checkbox"] + span::before {
+  display: inline-block;
+  content: "";
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid #bbb;
+  background: #fff;
+  margin: -0.125rem 0.5rem 0 0;
+  vertical-align: middle;
+  /* Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding: 0 2px;
+  line-height: 1.5;
+}
+/* チェックが入るとチェックアイコンを表示 */
+input[type="checkbox"]:checked + span::before {
+  content: "\f00c";
+}
+/*
+FOOTER要素
+================================================ */
+footer {
+  background: #2d3374;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 3.5rem 1rem;
+  text-align: center;
+}
+footer .btn {
+  color: #555;
+  background: #d0bea2;
+  margin-bottom: 3.5rem;
+}
+/*
+DESKTOP SIZE
+================================================ */
+@media (min-width: 600px) {
+  /* Table */
+  th,
+  td {
+    padding: 1.125rem;
+    display: table-cell;
+  }
+  .btn {
+    display: block;
+    width: 40%;
+    margin: 0 auto;
+  }
+}
