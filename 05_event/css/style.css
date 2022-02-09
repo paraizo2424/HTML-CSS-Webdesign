@@ -7,6 +7,24 @@ COLORS
   宣言は必ず「--」から始める
   --カスタムプロパティ名: 値;
   呼び出し例 => color: var(--gray);
+  注意点1:大文字・小文字は区別される
+  注意点2:プロパティ名をカスタムプロパティにできない
+    誤った例
+    p {
+      --bg: baclground-color;
+      var(--bg): pink;
+    }
+  注意点3:呼び出すときに単位を書き足すだけでは無効
+    誤った例
+    div {
+      --main-padding: 2;
+      padding: var(--main-padding)rem;
+    }
+  注意点3:calc関数を使って単位を含めることは可能
+    正しい例
+    div {
+      --main-margin: 2rem;
+      margin: calc(var(--main-margin) * 1rem));
 */
 :root {
   --light-blue: #4db1ec;
