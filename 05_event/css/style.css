@@ -1,5 +1,25 @@
 @charset "UTF-8";
-
+/*
+COLORS
+================================================ */
+/*
+  カスタムプロパティの定義　:rootに定義すると、どの位置からでも参照可
+  宣言は必ず「--」から始める
+  --カスタムプロパティ名: 値;
+  呼び出し例 => color: var(--gray);
+*/
+:root {
+  --light-blue: #4db1ec;
+  --blue: #1665cc;
+  --purple: #b473bf;
+  --pink: #ffb2c1;
+  --orange: #ff9f67;
+  --yellow: #ffd673;
+  --light-green: #a2e29b;
+  --green: #00a2af;
+  --grey: #333;
+  --white: #fff;
+}
 /*
 全般
 ================================================ */
@@ -86,7 +106,7 @@ main {
 HEADER
 ================================================ */
 .fixed-position {
-  background: #333;
+  background: var(--grey);
   padding: 1rem 0;
   /* 固定表示のための記述 */
   position: fixed;
