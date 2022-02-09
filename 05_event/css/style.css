@@ -21,16 +21,20 @@ td {
 }
 /* レイアウト */
 .wrapper {
-  max-width: 1200px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
 }
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
 main {
   max-width: 900px;
   width: 94%;
-  margin: 6.25rem auto;
-  padding: 3rem 2rem;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 /* ボタン */
 .btn {
@@ -63,6 +67,20 @@ main {
 /*
 HEADER
 ================================================ */
+.fixed-position {
+  background: #333;
+  padding: 1rem 0;
+  /* 固定表示のための記述 */
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.main-nav {
+  display: flex;
+}
+.main-nav {
+  padding: 0 30px;
+}
 
 /* Table */
 table {
