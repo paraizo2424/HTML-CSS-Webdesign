@@ -125,11 +125,11 @@ HERO
   /* ↓ 省略形だとブラウザーによってうまく表示されない
   background: var(--light-blue) url('../images/hero.jpg') no-repeat center / cover; */
   /* background-color: #4db1ec; */
-  background-image: url("../images/hero.jpg"), url("../images/water.jpg");
+  background-image: url("../images/hero.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-blend-mode: screen; /* 画像同士を重ねる */
+  /* background-blend-mode: screen; 画像同士を重ねる */
   height: 100vh;
   display: flex;
   align-items: center;
@@ -137,6 +137,7 @@ HERO
 #hero h1 {
   font-size: 3.5rem;
   margin-bottom: 1.5rem;
+  mix-blend-mode: overlay;
 }
 .hero-date {
   text-align: center;
