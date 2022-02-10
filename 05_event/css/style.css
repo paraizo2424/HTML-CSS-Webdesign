@@ -103,6 +103,7 @@ main {
 }
 .btn:hover {
   opacity: 0.8;
+  background: var(--pink);
 }
 /*
 HEADER
@@ -242,5 +243,10 @@ DESKTOP SIZE
     display: block;
     width: 40%;
     margin: 0 auto;
+  }
+  /* アニメーション（トランジション）*/
+  /* モバイルデバイスにはカーソルを合わせるという概念がないため */
+  .transition-ls {
+    transition: background 2.5s;
   }
 }
