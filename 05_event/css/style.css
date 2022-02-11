@@ -105,6 +105,35 @@ main {
   opacity: 0.8;
   background: var(--pink);
 }
+.box-bg {
+  display: block;
+  text-align: center;
+  background: pink;
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 2.25rem;
+  /* キーフレーム名 */
+  animation-name: box-size;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+/* キーフレームの設定 */
+/* キーフレームは:hoverなどのきっかけ不要 */
+@keyframes box-size {
+  0% {
+    background: skyblue;
+  }
+  50% {
+    color: white;
+    background: plum;
+    width: 50%;
+  }
+  100% {
+    background: pink;
+  }
+}
+
 /*
 HEADER
 ================================================ */
