@@ -133,7 +133,25 @@ main {
     background: pink;
   }
 }
-
+.recommend {
+  color: tomato;
+  display: inline-block;
+  position: relative;
+  animation: recommend-animation 2s infinite;
+}
+@keyframes recommend-animation {
+  0%,
+  25%,
+  100% {
+    top: 0;
+  }
+  25% {
+    top: -0.8rem;
+  }
+  75% {
+    top: -0.5rem;
+  }
+}
 /*
 HEADER
 ================================================ */
