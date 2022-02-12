@@ -321,6 +321,26 @@ textarea::placeholder {
   color: #bbb;
 }
 /*
+CONTACT
+================================================ */
+.contact {
+  margin: 1rem 0;
+  height: 30vh;
+  text-align: center;
+  padding: 5rem;
+  background: linear-gradient(#9e549c, #392152);
+}
+.btn-contact {
+  font-size: 1.5rem;
+  background: #fc2;
+  padding: 1rem;
+  display: inline-block;
+  transition: 0.5s;
+}
+.btn-contact:hover {
+  background: #ff0;
+}
+/*
 FOOTER要素
 ================================================ */
 footer {
