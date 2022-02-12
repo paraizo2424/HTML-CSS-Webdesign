@@ -259,6 +259,21 @@ NEWS
   color: white;
 }
 /*
+SPEAKERS
+================================================ */
+.speakers h3 {
+  background: #0bd;
+  margin: 0.5rem, 0;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  width: 500px;
+  color: white;
+  /* ベンダープレフィックス */
+  -webkit-clip-path: polygon(0 0, 470px 0, 100% 50%, 470px 100%, 0 100%);
+  /* 頂点座標をを右回りに設定 */
+  clip-path: polygon(0 0, 470px 0, 100% 50%, 470px 100%, 0 100%);
+}
+/*
 form
 ================================================ */
 /* 入力欄 */
