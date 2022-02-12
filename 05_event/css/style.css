@@ -172,7 +172,9 @@ HEADER
   top: 50px;
   right: 0;
   overflow: hidden;
+  transition: 0.5s;
 }
+/* main-navクラスがある要素、かつopen-menuクラスが付与された場合に幅を100%に変化させる */
 .main-nav.open-menu {
   width: 100%;
 }
