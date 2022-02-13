@@ -60,6 +60,26 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  z-index: 2; /* 文字列を動画の上に表示 */
+}
+.header-pattern {
+  position: absolute;
+  z-index: 1;
+  background-size: auto auto;
+  background-image: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    2px,
+    var(--bg) 2px,
+    var(--bg) 4px
+  );
+}
+.header-text,
+.header-pattern,
+header video {
+  width: 100vw;
+  height: 90vh;
 }
 .header-title {
   font-size: 2rem;
