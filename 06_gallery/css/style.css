@@ -198,7 +198,7 @@ DESKTOP SIZE
   }
   .grid-item:hover {
     filter: grayscale(0); /* 白黒画像を元の色付きに変更するフィルター */
-    transform: scale(1.1); /* 画像の拡大 */
+    transform: scale(1.1) translate(10px, 10px) rotate(10deg) skew(-10deg); /* 画像の拡大、移動、回転、傾斜 */
     z-index: 3;
     position: relative;
   }
