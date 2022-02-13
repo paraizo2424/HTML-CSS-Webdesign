@@ -124,6 +124,19 @@ MAIN要素
   filter: grayscale(100%);
 }
 /*
+auto-grid要素
+================================================ */
+.auto-grid-item {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+.auto-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+/*
 FOOTER要素
 ================================================ */
 footer {
