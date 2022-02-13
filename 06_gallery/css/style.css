@@ -161,4 +161,11 @@ bg-youtube.html
 DESKTOP SIZE
 ================================================ */
 @media (min-width: 600px) {
+  /* レイアウト */
+  .grid {
+    width: 80vw;
+    gap: 1vw;
+    grid-template-columns: repeat(3, 26vw);
+    grid-template-rows: repeat(5, 26vw);
+  }
 }
