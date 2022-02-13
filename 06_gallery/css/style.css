@@ -105,6 +105,17 @@ header video {
   height: 90vh;
 }
 /*
+MAIN要素
+================================================ */
+.grid {
+  display: grid;
+  width: 94vw;
+  margin: 0 auto 3vw;
+  gap: 2vw;
+  grid-template-columns: 46vw 46vw;
+  grid-template-rows: repeat(8, 46vw);
+}
+/*
 FOOTER要素
 ================================================ */
 footer {
