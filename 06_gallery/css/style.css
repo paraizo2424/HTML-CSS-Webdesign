@@ -4,8 +4,8 @@
 ================================================ */
 :root {
   --video-opacity: 0.5;
-  --text: #fff;
-  --bg: #000;
+  --text: #333;
+  --bg: #fff;
 }
 /*
 全般
@@ -199,6 +199,7 @@ DESKTOP SIZE
   .grid-item:hover {
     filter: grayscale(0); /* 白黒画像を元の色付きに変更するフィルター */
     transform: scale(1.1) translate(10px, 10px) rotate(10deg) skew(-10deg); /* 画像の拡大、移動、回転、傾斜 */
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
     z-index: 3;
     position: relative;
   }
