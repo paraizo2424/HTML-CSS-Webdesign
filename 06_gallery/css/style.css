@@ -153,6 +153,16 @@ footer {
   text-align: center;
 }
 /*
+LIGHTBOX LUMINOUS
+================================================ */
+.lum-lightbox.lum-open {
+  z-index: 4; /* 画像を拡大表示したときにサムネイルが重ならないようにするため */
+}
+.lum-lightbox-inner img {
+  max-width: 120vw;
+  max-height: 80vh;
+}
+/*
 bg-youtube.html
 ================================================ */
 .content {
