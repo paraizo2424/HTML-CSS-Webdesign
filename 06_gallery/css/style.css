@@ -198,5 +198,8 @@ DESKTOP SIZE
   }
   .grid-item:hover {
     filter: grayscale(0); /* 白黒画像を元の色付きに変更するフィルター */
+    transform: scale(1.1); /* 画像の拡大 */
+    z-index: 3;
+    position: relative;
   }
 }
