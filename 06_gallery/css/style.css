@@ -115,6 +115,14 @@ MAIN要素
   grid-template-columns: 46vw 46vw;
   grid-template-rows: repeat(8, 46vw);
 }
+/* 画像を正方形に切り抜いて表示する */
+.grid-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%);
+}
 /*
 FOOTER要素
 ================================================ */
