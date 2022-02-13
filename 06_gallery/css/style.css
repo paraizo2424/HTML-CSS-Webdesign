@@ -193,4 +193,10 @@ DESKTOP SIZE
     grid-column: 2/4;
     grid-row: 4/5;
   }
+  .grid-item {
+    transition: 3s;
+  }
+  .grid-item:hover {
+    filter: grayscale(0); /* 白黒画像を元の色付きに変更するフィルター */
+  }
 }
