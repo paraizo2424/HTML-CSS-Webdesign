@@ -1,9 +1,10 @@
 @charset "UTF-8";
 /*
-COLORS
+カスタムプロパティ定義
 ================================================ */
 :root {
-  --white: #fff;
+  --video-opacity: 0.5;
+  --text: #fff;
   --bg: #000;
 }
 /*
@@ -12,6 +13,7 @@ COLORS
 html {
   font-size: 100%;
   background: var(--bg);
+  color: var(--text);
   /* スムーズスクロール */
   scroll-behavior: smooth;
 }
@@ -46,6 +48,13 @@ h2,
 /*
 HEADER
 ================================================ */
+header video {
+  object-fit: cover;
+  object-position: conter top;
+  opacity: var(--video-opacity);
+  width: 100vw;
+  height: 90vh;
+}
 /*
 FOOTER要素
 ================================================ */
