@@ -6,3 +6,6 @@ new LuminousGallery(document.querySelectorAll(".grid-gallery"),{},{
     return trigger.querySelector('img').getAttribute('alt');
   }
 });
+
+// アニメーション用
+AOS.init();
