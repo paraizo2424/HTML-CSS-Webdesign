@@ -7,17 +7,26 @@
   --text: #333;
   --bg: #fff;
 }
+/* ダークモード用の配色（OS設定に従う） */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #ddd;
+    --bg: #000;
+    --video-opacity: 0.7;
+  }
+}
 /*
 全般
 ================================================ */
 html {
   font-size: 100%;
-  background: var(--bg);
-  color: var(--text);
   /* スムーズスクロール */
   scroll-behavior: smooth;
 }
 body {
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.5s;
   font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体",
     "ヒラギノ角ゴ Pro W3", sans-serif;
 }
